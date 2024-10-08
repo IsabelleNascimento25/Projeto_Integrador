@@ -164,6 +164,9 @@
         /* Blocos de entrada de texto */
         .input-block {
             margin-bottom: 20px;
+
+            position: relative;
+            top: -35px;
         }
 
         .input-block label {
@@ -212,12 +215,18 @@
             color: #fbfdff;
             background: #FFD23F;
             transform: translateX(-30%);
+
+            position: relative;
+            top: -60px;
         }
 
         .btn-signup {
             color: #fbfdff;
             background: #FFD23F;
             transform: translateX(-30%);
+
+            position: relative;
+            top: -60px;
         }
 
         /* Add this to the end of the login.css file */

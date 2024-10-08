@@ -87,3 +87,85 @@ li#objselect{
     color: #FFFFFF;
     font-size: 24px;
 }
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    margin: 12 auto;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #2980b9;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #2980b9;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f0f0f0;
+  
+  }
+  td {
+      color: #2980b9;
+  }
+  .table-header {
+    width: 100px;
+    text-align: center;
+  }
+  
+  .table-cell {
+    width: 80px;
+  }
+  
+  input[type="text"] {
+    border: none;
+    padding: 8px;
+    width: 100%;
+  }
+
+
+  /*texto do calendario*/
+  .txt1{
+    color: #0C356A;
+    font-family: "Fredoka", sans-serif;
+
+    position: relative;
+    left: 90px;
+    top: 160px;
+  }
+  .txt2{
+    color: #0C356A;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 500;
+
+    position: relative;
+    left: 90px;
+    top: 160px;
+  }
+
+.tabela{
+    width: 200px;
+
+    position: relative;
+    left: ;
+}
