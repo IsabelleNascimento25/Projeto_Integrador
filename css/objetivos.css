@@ -1,5 +1,5 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
    font-family: Arial, sans-serif;
    display: flex;
@@ -9,30 +9,38 @@ body {
    background-color: #f4f4f4;
 }
 
-li#li2{
+li#li2 {
    background-color: #a6c7f1;
 }
-.wishlist{
+
+.wishlist {
    position: relative;
-   top: 20px;  /* Move a div 20px para baixo */
-   right: 460px; /* Move a div 30px para a direita */
+   top: 20px;
+   /* Move a div 20px para baixo */
+   right: 460px;
+   /* Move a div 30px para a direita */
 }
- .lista_opcoes {
+
+.lista_opcoes {
    border-spacing: 0 15px;
    left: 20px;
-   font-family: Arial, sans-serif; 
+   font-family: Arial, sans-serif;
    color: #363636;
-    padding: 10px;
+   padding: 10px;
    position: left;
 
-   padding: 10px; /* Opcional: Adiciona um pouco de espaçamento interno */
+   padding: 10px;
+   /* Opcional: Adiciona um pouco de espaçamento interno */
 }
-th, td {
+
+th,
+td {
    padding: 10px;
    text-align: left;
 }
+
 /* Botao de excluir objetivo */
-.remove-button{
+.remove-button {
    color: #ffffff;
    background-color: #f2cf0aa8;
    border: none;
@@ -43,46 +51,53 @@ th, td {
 
 }
 
-.Contador_de_lista{
+.Contador_de_lista {
    color: #06264F;
    font-family: "Fredoka", sans-serif;
    font-weight: 700;
    background-color: #B8CBE3;
-   width: 300px;              /* Largura do elemento */
-   height: 200px;             /* Altura do elemento */
-   padding: 20px;             /* Espaçamento interno */
-   margin: 10px; 
+   width: 300px;
+   /* Largura do elemento */
+   height: 200px;
+   /* Altura do elemento */
+   padding: 20px;
+   /* Espaçamento interno */
+   margin: 10px;
    padding: 50px;
    position: absolute;
-   top: 9px;  /* Move a div 20px para baixo */
-   left: 133vh; /* Move a div 30px para a direita */
+   top: 9px;
+   /* Move a div 20px para baixo */
+   left: 133vh;
+   /* Move a div 30px para a direita */
 }
+
 /* Fundo branco do contador de lista */
-.fundo_branco{
+.fundo_branco {
    background-color: #ffffff;
    border: none;
    width: 200px;
    display: inline-block;
-word-spacing: 20px;
-height: 34px;
+   word-spacing: 20px;
+   height: 34px;
    border-radius: 4px;
 
 }
 
-.Checkbox{
+.Checkbox {
    width: 70px;
    height: 28px;
 
 }
+
 /* Botao de adcionar objetivo */
-.add-button{
+.add-button {
    color: #0C356A;
    background-color: #B8CBE3;
    border: none;
    width: 653px;
    font-size: 20px;
-word-spacing: 20px;
-height: 34px;
+   word-spacing: 20px;
+   height: 34px;
    border-radius: 4px;
 }
 
@@ -95,9 +110,10 @@ input[type="text"] {
    width: 400px;
    box-sizing: border-box;
 
-      display: grid;
-      gap: 500px; /* Adiciona 20px de espaço entre as linhas e colunas da grade */
-  
+   display: grid;
+   gap: 500px;
+   /* Adiciona 20px de espaço entre as linhas e colunas da grade */
+
 }
 
 input[type="number"] {
@@ -107,6 +123,7 @@ input[type="number"] {
    width: 150px;
    box-sizing: border-box;
 }
+
 .container {
    display: flex;
    gap: 30px;
@@ -166,6 +183,7 @@ input[type="checkbox"] {
    text-decoration: line-through;
    color: #999;
 }
+
 .cor_azul {
    border-bottom: 91px solid #0C356A;
    z-index: 999;
@@ -254,6 +272,7 @@ main#list {
    left: 50%;
    top: 50%;
 }
+
 /* informaçoes do meio da tela*/
 
 div#fundo1 {
@@ -275,7 +294,7 @@ h1#h1txt1 {
    color: #06264F;
    font-family: "Fredoka", sans-serif;
 
-   position: absolute; 
+   position: absolute;
    top: -150px;
    left: 50px;
 
@@ -294,7 +313,7 @@ h1#h1txt2 {
    font-size: 30px;
 }
 
-h2#h2txt1{
+h2#h2txt1 {
    width: 100px;
    margin: 0;
    padding: 0;
@@ -308,7 +327,7 @@ h2#h2txt1{
    font-size: 25px;
 }
 
-form#form1{
+form#form1 {
    background-color: #FEF445;
    margin: 0;
    padding: 0;
@@ -323,7 +342,7 @@ form#form1{
    border-radius: 15px;
 }
 
-img#img1{
+img#img1 {
    width: 30px;
    margin: 0;
    padding: 0;
@@ -334,7 +353,7 @@ img#img1{
    top: 10px;
 }
 
-h2#h2txt2{
+h2#h2txt2 {
    position: absolute;
    left: 75px;
    top: 15px;
@@ -346,7 +365,7 @@ h2#h2txt2{
    font-size: 19px;
 }
 
-img#img2{
+img#img2 {
    position: absolute;
    top: 700px;
    left: -45px;
@@ -357,11 +376,11 @@ img#img2{
    font-family: "Fredoka", sans-serif;
 }
 
-body{
+body {
    background-color: #ffffff;
 }
 
-form#form2{
+form#form2 {
    background-color: #B8CBE3;
    margin: 0;
    padding: 0;
@@ -376,7 +395,7 @@ form#form2{
    border-radius: 10px;
 }
 
-div#div1{
+div#div1 {
    background-color: #ffffff;
 
    position: absolute;
@@ -391,7 +410,7 @@ div#div1{
    border-radius: 10px;
 }
 
-h2#h2txt3{
+h2#h2txt3 {
    font-size: 19px;
    color: #06264F;
 
@@ -400,16 +419,16 @@ h2#h2txt3{
    left: 10px;
 }
 
-h2#h2txt4{
+h2#h2txt4 {
    position: absolute;
    left: 5px;
 }
 
-li#obj{
+li#obj {
    background-color: #a6c7f1;
 }
 
-h2#h2txt5{
+h2#h2txt5 {
    position: absolute;
    left: -450px;
    top: -70px;
@@ -417,7 +436,7 @@ h2#h2txt5{
    font-size: 20px;
 }
 
-h2#h2txt6{
+h2#h2txt6 {
    position: absolute;
    left: -175px;
    top: -70px;
@@ -425,7 +444,7 @@ h2#h2txt6{
    font-size: 20px;
 }
 
-h2#h2txt7{
+h2#h2txt7 {
    position: absolute;
    top: -70px;
 
@@ -434,7 +453,7 @@ h2#h2txt7{
 
 
 
-div#div2{
+div#div2 {
    background-color: #B8CBE3;
    width: 275px;
    height: 180px;
@@ -446,7 +465,7 @@ div#div2{
    top: -60px;
 }
 
-h2#h2txt8{
+h2#h2txt8 {
    position: absolute;
    left: 40px;
    top: 20px;
@@ -455,7 +474,7 @@ h2#h2txt8{
    color: #06264F;
 }
 
-div#div3{
+div#div3 {
    background-color: #FFFFFF;
    width: 250px;
    height: 30px;
@@ -466,8 +485,8 @@ div#div3{
    left: 10px;
    top: 50px;
 }
- 
-h2#h2txt9{
+
+h2#h2txt9 {
    position: absolute;
    left: 55px;
    top: 90px;
@@ -476,7 +495,7 @@ h2#h2txt9{
    font-size: 20px;
 }
 
-div#div4{
+div#div4 {
    background-color: #FFFFFF;
    width: 250px;
    height: 30px;
@@ -488,18 +507,18 @@ div#div4{
    top: 125px;
 }
 
-h2#h2txt10{
+h2#h2txt10 {
    color: #06264F;
-            margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Fredoka", sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Fredoka", sans-serif;
    position: absolute;
    left: -300px;
    top: 510px;
 }
 
-form#form3{
+form#form3 {
    text-align: right;
    font-size: 11px;
 
@@ -508,7 +527,7 @@ form#form3{
    top: 570px;
 }
 
-form#form4{
+form#form4 {
    background-color: #B8CBE3;
    width: 150px;
    height: 430px;
@@ -518,7 +537,7 @@ form#form4{
    top: 555px;
 }
 
-div#d1{ 
+div#d1 {
    background-color: #fff;
    width: 120px;
    height: 30px;
@@ -529,7 +548,7 @@ div#d1{
    top: 10px;
 }
 
-div#d2{ 
+div#d2 {
    background-color: #fff;
    width: 120px;
    height: 30px;
@@ -540,7 +559,7 @@ div#d2{
    top: 45px;
 }
 
-div#d3{ 
+div#d3 {
    background-color: #fff;
    width: 120px;
    height: 30px;
@@ -551,7 +570,7 @@ div#d3{
    top: 80px;
 }
 
-div#d4{ 
+div#d4 {
    background-color: #fff;
    width: 120px;
    height: 30px;
@@ -562,7 +581,7 @@ div#d4{
    top: 115px;
 }
 
-div#d5{ 
+div#d5 {
    background-color: #fff;
    width: 120px;
    height: 30px;
@@ -573,7 +592,7 @@ div#d5{
    top: 150px;
 }
 
-div#d6{ 
+div#d6 {
    background-color: #fff;
    width: 120px;
    height: 30px;
@@ -584,7 +603,7 @@ div#d6{
    top: 185px;
 }
 
-div#d7{ 
+div#d7 {
    background-color: #fff;
    width: 120px;
    height: 30px;
@@ -595,7 +614,7 @@ div#d7{
    top: 220px;
 }
 
-div#d8{ 
+div#d8 {
    background-color: #fff;
    width: 120px;
    height: 30px;
@@ -606,7 +625,7 @@ div#d8{
    top: 255px;
 }
 
-div#d9{ 
+div#d9 {
    background-color: #fff;
    width: 120px;
    height: 30px;
@@ -617,7 +636,7 @@ div#d9{
    top: 290px;
 }
 
-div#d10{ 
+div#d10 {
    background-color: #fff;
    width: 120px;
    height: 30px;
@@ -628,7 +647,7 @@ div#d10{
    top: 325px;
 }
 
-div#d11{ 
+div#d11 {
    background-color: #fff;
    width: 120px;
    height: 30px;
@@ -639,7 +658,7 @@ div#d11{
    top: 360px;
 }
 
-div#d12{ 
+div#d12 {
    background-color: #fff;
    width: 120px;
    height: 30px;
@@ -650,7 +669,7 @@ div#d12{
    top: 395px;
 }
 
-button#button2{
+button#button2 {
    background-color: #B8CBE3;
    width: 70px;
    height: 60px;
@@ -663,11 +682,10 @@ button#button2{
    top: 1010px;
 }
 
-img#img3{
+img#img3 {
    width: 30px;
 
    position: absolute;
    top: 1025px;
    left: -230px;
 }
-

@@ -1,4 +1,4 @@
-i#perfil{
+i#perfil {
     font-size: 200px;
     color: rgb(133, 133, 133);
 
@@ -6,7 +6,8 @@ i#perfil{
     left: 650px;
     top: 100px;
 }
-.nome{
+
+.nome {
     font-family: "Fredoka", sans-serif;
     font-size: 50px;
 
@@ -14,13 +15,14 @@ i#perfil{
     left: 690px;
     top: 90px;
 }
-.pessoa{
+
+.pessoa {
     background-color: #06264F;
     width: 30px;
 }
 
 /*quadro 1*/
-.quadro1{
+.quadro1 {
     background-color: #06264F;
     border-radius: 7px;
     width: 50px;
@@ -32,14 +34,16 @@ i#perfil{
     top: 140px;
     z-index: 2;
 }
-i#ft1{
+
+i#ft1 {
     font-size: 30px;
     color: #FFFFFF;
 
     position: relative;
     top: 5px;
 }
-.campo1{
+
+.campo1 {
     border-color: #06264F;
     border-style: double;
     border-radius: 5px;
@@ -48,7 +52,7 @@ i#ft1{
     font-size: 20px;
     font-family: "Fredoka", sans-serif;
     font-weight: 700;
-    
+
 
     position: relative;
     left: 530px;
@@ -56,7 +60,7 @@ i#ft1{
 }
 
 /*quado 2*/
-.quadro2{
+.quadro2 {
     background-color: #06264F;
     border-radius: 7px;
     width: 50px;
@@ -68,14 +72,16 @@ i#ft1{
     top: 120px;
     z-index: 2;
 }
-i#ft2{
+
+i#ft2 {
     font-size: 30px;
     color: #FFFFFF;
 
     position: relative;
     top: 5px;
 }
-.campo2{
+
+.campo2 {
     border-color: #06264F;
     border-style: double;
     border-radius: 5px;
@@ -84,7 +90,7 @@ i#ft2{
     font-size: 20px;
     font-family: "Fredoka", sans-serif;
     font-weight: 700;
-    
+
 
     position: relative;
     left: 530px;
@@ -92,7 +98,7 @@ i#ft2{
 }
 
 /*quado 3*/
-.quadro3{
+.quadro3 {
     background-color: #06264F;
     border-radius: 7px;
     width: 50px;
@@ -104,14 +110,16 @@ i#ft2{
     top: 100px;
     z-index: 2;
 }
-i#ft3{
+
+i#ft3 {
     font-size: 30px;
     color: #FFFFFF;
 
     position: relative;
     top: 5px;
 }
-.campo3{
+
+.campo3 {
     border-color: #06264F;
     border-style: double;
     border-radius: 5px;
@@ -120,7 +128,7 @@ i#ft3{
     font-size: 20px;
     font-family: "Fredoka", sans-serif;
     font-weight: 700;
-    
+
 
     position: relative;
     left: 530px;
@@ -128,7 +136,7 @@ i#ft3{
 }
 
 /*botão de sair*/
-button{
+button {
     color: white;
     background-color: #D02222;
     width: 150px;

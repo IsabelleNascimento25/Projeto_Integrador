@@ -1,74 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/imagens/icone.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel='stylesheet' media='screen' href='../../css/indice/objetivos.css'>
+    <link rel="stylesheet" type="text/css" href="css/indice.css">
+    <link rel="stylesheet" type="text/css" href="css/objetivos.css">
     <link rel='stylesheet' media='screen' href='../../js/indice/objetivos.js'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Controle de Gastos</title>
     <script src="../../js/objetivos.js"></script>
 
     <style>
-          .cor_azul {
-    border-bottom: 91px solid #0C356A;
-    /* Define a borda inferior */
-    position: absolute;
-    position: fixed;
-    left: 200px;
-    width: 1500px;
-    height: 11px;
-    top: 0px;
-    z-index: 1;
-      /* Adiciona espaço acima e abaixo da linha */
- }
+        .cor_azul {
+            border-bottom: 91px solid #0C356A;
+            /* Define a borda inferior */
+            position: absolute;
+            position: fixed;
+            left: 200px;
+            width: 1500px;
+            height: 11px;
+            top: 0px;
+            z-index: 1;
+            /* Adiciona espaço acima e abaixo da linha */
+        }
     </style>
 </head>
+
 <body>
-    
+
     <nav class="menu-lateral">
-        <link rel='stylesheet' media='screen' href='../../css/indice/indice.css'> 
+        <link rel='stylesheet' media='screen' href='../../css/indice/indice.css'>
         <div class="btn-expandir">
             <h1>Índice</h1>
         </div>
         <div class="cor_azul"></div>
         <ul>
             <li class="item-menu"><a href="perfil.html">
-                <span class="icon"> <i class="bi bi-person"></i></span>
-                <span class="txt-link">Perfil</span>
-            </a></li>
+                    <span class="icon"> <i class="bi bi-person"></i></span>
+                    <span class="txt-link">Perfil</span>
+                </a></li>
             <li class="item-menu"><a href="home.html">
-                <span class="icon"><i class="bi bi-house-door"></i></span>
-                <span class="txt-link">Início</span>
-            </a></li>
+                    <span class="icon"><i class="bi bi-house-door"></i></span>
+                    <span class="txt-link">Início</span>
+                </a></li>
             <li class="item-menu"><a href="mes.html">
-                <span class="icon"><i class="bi bi-coin"></i></span>
-                <span class="txt-link">Gastos do mês</span>
-            </a></li>
+                    <span class="icon"><i class="bi bi-coin"></i></span>
+                    <span class="txt-link">Gastos do mês</span>
+                </a></li>
             <li class="item-menu" id="li2"><a href="objetivos.html">
-                <span class="icon"><i class="bi bi-bar-chart"></i></span>
-                <span class="txt-link">Objetivos</span>
-            </a></li>
+                    <span class="icon"><i class="bi bi-bar-chart"></i></span>
+                    <span class="txt-link">Objetivos</span>
+                </a></li>
             <li class="item-menu"><a href="anual.html">
-                <span class="icon"><i class="bi bi-calendar-check"></i></span>
-                <span class="txt-link">Visão Anual</span>
-            </a></li>
+                    <span class="icon"><i class="bi bi-calendar-check"></i></span>
+                    <span class="txt-link">Visão Anual</span>
+                </a></li>
             <li class="item-menu"><a href="configuracoes.html">
-                <span class="icon"><i class="bi bi-gear"></i></span>
-                <span class="txt-link">Configurações</span>
-            </a></li>
+                    <span class="icon"><i class="bi bi-gear"></i></span>
+                    <span class="txt-link">Configurações</span>
+                </a></li>
         </ul>
     </nav>
 
     <main id="list">
         <h1 id="h1txt1">WISHLIST</h1>
-       
-          
+
+
         </head>
+
         <body>
-            
+
             <div class="wishlist">
                 <!-- Seção para despesas mensais -->
                 <div class="section" id="monthly-expenses">
@@ -95,16 +99,16 @@
                         WISHLIST QUE FALTAM: <span class="fundo_branco" id="remaining-value">0</span>
                     </p>
                 </div>
-            
+
                 <script>
                     let conqueredCount = 0;
                     let remainingCount = 0;
-            
+
                     function updateCounters() {
                         document.getElementById("conquered-value").innerText = conqueredCount;
                         document.getElementById("remaining-value").innerText = remainingCount;
                     }
-            
+
                     function addFixedExpenseRow() {
                         let tableBody = document.getElementById("monthly-expenses-body");
                         let newRow = tableBody.insertRow();
@@ -112,30 +116,30 @@
                         newRow.insertCell().innerHTML = '<input type="number" placeholder="">';
                         newRow.insertCell().innerHTML = '<input class="Checkbox" type="checkbox" onchange="updateConqueredCount()">';
                         newRow.insertCell().innerHTML = '<button class="remove-button" onclick="deleteFixedExpenseRow(this)"><i class="bi bi-x"></i></button>';
-                        
+
                         remainingCount++;
                         updateCounters();
                     }
-            
+
                     function deleteFixedExpenseRow(button) {
                         let row = button.parentNode.parentNode;
                         let checkbox = row.querySelector('.Checkbox');
-            
+
                         if (checkbox.checked) {
                             conqueredCount--;
                         } else {
                             remainingCount--;
                         }
-            
+
                         row.parentNode.removeChild(row);
                         updateCounters();
                     }
-            
+
                     function updateConqueredCount() {
                         let checkboxes = document.querySelectorAll('#monthly-expenses-body .Checkbox');
                         conqueredCount = 0;
                         remainingCount = 0;
-            
+
                         checkboxes.forEach(checkbox => {
                             if (checkbox.checked) {
                                 conqueredCount++;
@@ -143,72 +147,73 @@
                                 remainingCount++;
                             }
                         });
-            
+
                         updateCounters();
                     }
-                    function cadastro(){
-    prompt('Adicionar nova meta');
-    prompt('Quanto você investirá nesta meta?');
-    prompt('Porque você quer investir nesta meta?');
-    alert('Esta função ainda não funciona!!');
-  }
+                    function cadastro() {
+                        prompt('Adicionar nova meta');
+                        prompt('Quanto você investirá nesta meta?');
+                        prompt('Porque você quer investir nesta meta?');
+                        alert('Esta função ainda não funciona!!');
+                    }
                 </script>
             </div>
-            
-            
-        <h1 id="h1txt2">Investimento</h1>
-        <h2 id="h2txt1">Meta 1</h2> 
-        <h2 id="h2txt10">Progresso</h2>
-      
-        <form action="define" id="form1">
-            <img src="../../imagens/black-star.png" alt="" id="img1">
-            <h2 id="h2txt2">R$ 00.00</h2>
-        </form>
-        <img src="../../imagens/arvore.gif" alt="" id="img2">
 
-        <form action="define" id="form2">
-            <h2 id="h2txt3">Quantidade investido</h2>
-            <div id="div1">
-                <h2 id="h2txt4">R$ 00.00</h2>
-            </div>
-        </form>
 
-        <form action="" id="form3">
-            <h2>Janeiro</h2><br>
-            <h2>Fevereiro</h2><br>
-            <h2>Março</h2><br>
-            <h2>Abril</h2><br>
-            <h2>Maio</h2><br>
-            <h2>Junho</h2><br>
-            <h2>Julho</h2><br>
-            <h2>Agosto</h2><br>
-            <h2>Setembro</h2><br>
-            <h2>Outubro</h2><br>
-            <h2>Novembro</h2><br>
-            <h2>Dezembro</h2><br>
-        </form>
+            <h1 id="h1txt2">Investimento</h1>
+            <h2 id="h2txt1">Meta 1</h2>
+            <h2 id="h2txt10">Progresso</h2>
 
-        <form action="" id="form4">
-            <div id="d1"></div>
-            <div id="d2"></div>
-            <div id="d3"></div>
-            <div id="d4"></div>
-            <div id="d5"></div>
-            <div id="d6"></div>
-            <div id="d7"></div>
-            <div id="d8"></div>
-            <div id="d9"></div>
-            <div id="d10"></div>
-            <div id="d11"></div>
-            <div id="d12"></div>
-        </form>
+            <form action="define" id="form1">
+                <img src="../../imagens/black-star.png" alt="" id="img1">
+                <h2 id="h2txt2">R$ 00.00</h2>
+            </form>
+            <img src="../../imagens/arvore.gif" alt="" id="img2">
 
-        <button id="button2" type="submit" class="btn btn-primary" id="btn_cadastro" onclick="cadastro()"><i class="bi bi-plus"></i></button>
-      
-        
+            <form action="define" id="form2">
+                <h2 id="h2txt3">Quantidade investido</h2>
+                <div id="div1">
+                    <h2 id="h2txt4">R$ 00.00</h2>
+                </div>
+            </form>
+
+            <form action="" id="form3">
+                <h2>Janeiro</h2><br>
+                <h2>Fevereiro</h2><br>
+                <h2>Março</h2><br>
+                <h2>Abril</h2><br>
+                <h2>Maio</h2><br>
+                <h2>Junho</h2><br>
+                <h2>Julho</h2><br>
+                <h2>Agosto</h2><br>
+                <h2>Setembro</h2><br>
+                <h2>Outubro</h2><br>
+                <h2>Novembro</h2><br>
+                <h2>Dezembro</h2><br>
+            </form>
+
+            <form action="" id="form4">
+                <div id="d1"></div>
+                <div id="d2"></div>
+                <div id="d3"></div>
+                <div id="d4"></div>
+                <div id="d5"></div>
+                <div id="d6"></div>
+                <div id="d7"></div>
+                <div id="d8"></div>
+                <div id="d9"></div>
+                <div id="d10"></div>
+                <div id="d11"></div>
+                <div id="d12"></div>
+            </form>
+
+            <button id="button2" type="submit" class="btn btn-primary" id="btn_cadastro" onclick="cadastro()"><i
+                    class="bi bi-plus"></i></button>
+
+
 
     </main>
-   
+
 </body>
 
 </html>

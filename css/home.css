@@ -13,12 +13,14 @@
     height: 11px;
     top: -3px;
     z-index: 1;
-      /* Adiciona espaço acima e abaixo da linha */
- }
- 
-.add-button, .remove-button {
+    /* Adiciona espaço acima e abaixo da linha */
+}
+
+.add-button,
+.remove-button {
     cursor: pointer;
 }
+
 input[type="number"].currency:invalid {
     border: 1px solid red;
 }
@@ -39,28 +41,33 @@ input[type="number"].currency:invalid {
     left: 30%;
     top: 100px;
 }
+
 .balance {
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 20px;
 }
+
 .warning {
     color: red;
     font-weight: bold;
     margin: 10px 0;
 }
+
 .over-budget {
-    background-color: #f8d7da; /* Light red background */
-    color: #721c24; /* Dark red text */
+    background-color: #f8d7da;
+    /* Light red background */
+    color: #721c24;
+    /* Dark red text */
 }
 
 /* cor de fundo do botão inicio */
-li#cor_button{
+li#cor_button {
     background-color: #a6c7f1;
 }
 
 /* codigo do estilo do Saldo */
-div#entry-section{
+div#entry-section {
     background-color: #0C356A;
     width: 400px;
     height: 200px;
@@ -74,25 +81,25 @@ div#entry-section{
     font-family: "Open Sans", sans-serif;
 }
 
-th#th1{
+th#th1 {
     color: #FFFFFF;
     font-size: 17px;
-     
+
     position: absolute;
     left: 125px;
     top: 10px;
 }
 
-div#div2{
+div#div2 {
     color: #FFFFFF;
     font-family: "Open Sans", sans-serif;
 
     position: absolute;
     left: 50px;
-    top:  40px;
+    top: 40px;
 }
 
-form#entry-output{
+form#entry-output {
     background-color: #FFC436;
     width: 300px;
     height: 100px;
@@ -104,7 +111,7 @@ form#entry-output{
     top: 40px;
 }
 
-button#button1{
+button#button1 {
     background-color: #D6D9F2;
     border: none;
     border-radius: 3px;
@@ -119,7 +126,7 @@ button#button1{
     font-size: 15px;
 }
 
-input#entry-amount{
+input#entry-amount {
     width: 80px;
     border-radius: 5px;
     border: none;
@@ -135,7 +142,7 @@ input#entry-amount{
     font-family: "Open Sans", sans-serif;
 }
 
-div#div1{
+div#div1 {
     font-size: 20px;
     color: #FFFFFF;
 
@@ -146,12 +153,12 @@ div#div1{
     font-family: "Open Sans", sans-serif;
 }
 
-div#balance{
+div#balance {
     z-index: 2;
 }
 
 /* estilização da Saida */
-div#expense-output{
+div#expense-output {
     background-color: #0C356A;
     width: 400px;
     height: 200px;
@@ -163,7 +170,7 @@ div#expense-output{
     top: 30px;
 }
 
-div#div3{
+div#div3 {
     position: absolute;
     left: 175px;
     top: 10px;
@@ -172,21 +179,21 @@ div#div3{
     font-size: 20px;
 }
 
-table#table1{
+table#table1 {
     position: absolute;
     left: 150px;
     top: 50px;
     font-family: "Open Sans", sans-serif;
 }
 
-div#total-expense{
-    position:absolute;
+div#total-expense {
+    position: absolute;
     left: 145px;
     top: 175px;
     font-family: "Open Sans", sans-serif;
 }
 
-div#balance{
+div#balance {
     color: #FFFFFF;
     font-family: "Open Sans", sans-serif;
     font-size: 17px;
@@ -199,7 +206,7 @@ div#balance{
 /*gastos fixos do mes*/
 /* tabelas*/
 
-div#monthly-expenses{
+div#monthly-expenses {
     font-family: "Open Sans", sans-serif;
     width: 1000px;
 
@@ -208,7 +215,7 @@ div#monthly-expenses{
     top: 300px;
 }
 
-div#div5{
+div#div5 {
     color: #0C356A;
 
     position: absolute;
@@ -216,52 +223,55 @@ div#div5{
     top: -30px;
     font-family: "Fredoka", sans-serif;
 }
+
 /*Nome*/
-input#input1{
+input#input1 {
     color: #7c7c7c;
     width: 60px;
     height: 20px;
     border-radius: 2px;
-    border-style: solid; 
-    border-width: 1px; 
+    border-style: solid;
+    border-width: 1px;
     border: 1px solid #ccc;
 }
+
 /*Data*/
-input#input2{
+input#input2 {
     width: 60px;
     height: 20px;
     color: #7c7c7c;
     border-radius: 2px;
-    border-style: solid; 
-    border-width: 1px; 
+    border-style: solid;
+    border-width: 1px;
     border: 1px solid #ccc;
-    
+
     position: relative;
     left: 0px;
 }
+
 /*Categoria*/
 
-select#select3{
+select#select3 {
     color: #7c7c7c;
     width: 60px;
     height: 20px;
     border-radius: 2px;
-    border-style: solid; 
-    border-width: 1px; 
+    border-style: solid;
+    border-width: 1px;
     border: 1px solid #ccc;
-    
+
     position: relative;
     left: 10px;
-}    
+}
 
 /*Valor*/
 
-input#input5{
+input#input5 {
     width: 60px;
     height: 20px;
     border-radius: 2px;
     border: 1px solid #ccc;
-    
+
     position: relative;
     left: 1px;
 }
@@ -270,83 +280,85 @@ input#input5{
 
 
 
-input#input10{
+input#input10 {
     color: #7c7c7c;
     width: 60px;
     height: 20px;
     border-radius: 2px;
-    border-style: solid; 
-    border-width: 1px; 
+    border-style: solid;
+    border-width: 1px;
     border: 1px solid #ccc;
-    
+
     position: relative;
-    
+
     top: 2px;
 }
 
 
 /*Tipo*/
-select#select1{
+select#select1 {
     color: #7c7c7c;
     width: 60px;
     height: 20px;
     border-radius: 2px;
-    border-style: solid; 
-    border-width: 1px; 
+    border-style: solid;
+    border-width: 1px;
     border: 1px solid #ccc;
-    
+
     position: relative;
     left: 0px
 }
 
-option#option1{
+option#option1 {
     color: #7c7c7c;
     width: 60px;
     height: 20px;
     border-radius: 2px;
-    border-style: solid; 
-    border-width: 1px; 
+    border-style: solid;
+    border-width: 1px;
     border: 1px solid #ccc;
-    
+
     position: relative;
     left: 0px;
 }
+
 /*remover*/
-button#button2{
+button#button2 {
     background-color: #f2cf0aa8;
     color: #ffffff;
     width: 60px;
     height: 20px;
     border-radius: 2px;
-    border-style: solid; 
-    border-width: 1px; 
+    border-style: solid;
+    border-width: 1px;
     border: none;
     font-family: "Fredoka", sans-serif;
-    
+
     position: relative;
     left: 5px;
     top: 3px;
 }
 
-i#deleta{
+i#deleta {
     font-size: 18px;
 }
+
 /*botão*/
-button#button3{
+button#button3 {
     background-color: #B8CBE3;
     border-radius: 2px;
     border: none;
     width: 70px;
 }
 
-i#i1{
+i#i1 {
     color: #FFFFFF;
     font-size: 20px;
 }
 
 /*Gasto por categoria*/
 
-div#div7{
+div#div7 {
     font-family: "Open Sans", sans-serif;
 
     position: relative;
@@ -354,7 +366,7 @@ div#div7{
     top: 272px;
 }
 
-div#div6{
+div#div6 {
     color: #0C356A;
     font-family: "Fredoka", sans-serif;
 
@@ -362,118 +374,125 @@ div#div6{
     left: 75px;
 }
 
-div#div4{
+div#div4 {
     font-family: "Open Sans", sans-serif;
 
     position: relative;
     left: 402px;
     top: 250px;
 }
+
 /*botão*/
-div#div8{
+div#div8 {
     position: relative;
     left: 402px;
     top: 300px;
     z-index: 2;
 }
 
-button#button4{
+button#button4 {
     background-color: #B8CBE3;
     border-radius: 2px;
     border: none;
     width: 70px;
 }
+
 /*Tabelas*/
 
 /*Categoria*/
-input#input6{
+input#input6 {
     color: #7c7c7c;
     width: 80px;
     height: 20px;
     border-radius: 2px;
-    border-style: solid; 
-    border-width: 1px; 
+    border-style: solid;
+    border-width: 1px;
     border: 1px solid #ccc;
-    
+
     position: relative;
     left: 0px;
     z-index: 2;
 }
+
 /*Limites de gastos*/
 
-input#input7{
+input#input7 {
     color: #7c7c7c;
     width: 60px;
     height: 20px;
     border-radius: 2px;
-    border-style: solid; 
-    border-width: 1px; 
+    border-style: solid;
+    border-width: 1px;
     border: 1px solid #ccc;
-    
+
     position: relative;
     left: 5px;
     z-index: 2;
 }
 
-th#th9{
+th#th9 {
     position: relative;
     left: 10px;
 }
+
 /*valor*/
-input#input8{
+input#input8 {
     color: #7c7c7c;
     width: 60px;
     height: 20px;
     border-radius: 2px;
-    border-style: solid; 
-    border-width: 1px; 
+    border-style: solid;
+    border-width: 1px;
     border: 1px solid #ccc;
-    
+
     position: relative;
     left: 10px;
     z-index: 2;
 }
 
-th#th10{
+th#th10 {
     position: relative;
     left: 10px;
 }
+
 /*Porcentagem*/
-input#input9{
+input#input9 {
     color: #7c7c7c;
     width: 80px;
     height: 20px;
     border-radius: 2px;
-    border-style: solid; 
-    border-width: 1px; 
+    border-style: solid;
+    border-width: 1px;
     border: 1px solid #ccc;
-    
+
     position: relative;
     left: 27px;
     z-index: 2;
 }
 
-th#th11{
+th#th11 {
     position: relative;
     left: 15px;
 }
+
 /*Botão*/
-th#th12{
+th#th12 {
     position: relative;
     left: 20px;
 }
-button#button5{
+
+button#button5 {
     background-color: #f2cf0aa8;
     color: #ffffff;
     width: 60px;
     height: 20px;
     border-radius: 2px;
-    border-style: solid; 
-    border-width: 1px; 
+    border-style: solid;
+    border-width: 1px;
     border: none;
     font-family: "Fredoka", sans-serif;
     z-index: 2;
-    
+
     position: relative;
     left: 26px;
     top: 3px;
@@ -481,7 +500,7 @@ button#button5{
 
 /*Aviso*/
 
-h1#txt1{
+h1#txt1 {
     position: relative;
     top: -160px;
     right: 80px;
