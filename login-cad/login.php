@@ -25,7 +25,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 if (password_verify($senha, $senha_armazenada)) {
                     // Login bem-sucedido
                     // Redireciona para home.html
+<<<<<<< HEAD
                     header("Location: /Projeto_Integrador/perguntas/aviso1.html");
+=======
+                    header("Location: /Projeto_Integrador/home.html");
+>>>>>>> a3fe61a78b144da4c871d5138dda7030eff762b8
                     exit; // Certifique-se de sair após o redirecionamento
                 } else {
                     echo "Credenciais inválidas.";
