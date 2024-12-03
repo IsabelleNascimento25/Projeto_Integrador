@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/imagens/icone.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Controle de Gastos</title>
+
+    <link rel="stylesheet" href="./css/home.css">
+
+
+    <style>
+        form#entry-output {
+            background-color: #FFC436;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- menu -->
+    <nav class="menu-lateral">
+        <div class="btn-expandir">
+            <h1>Índice</h1>
+        </div>
+        <div class="cor_azul"></div>
+        <ul>
+            <li class="item-menu"><a href="perfil.html">
+                    <span class="icon"> <i class="bi bi-person"></i></span>
+                    <span class="txt-link">Perfil</span>
+                </a></li>
+            <li class="item-menu" id="cor_button"><a href="home.html">
+                    <span class="icon"><i class="bi bi-house-door"></i></span>
+                    <span class="txt-link">Início</span>
+                </a></li>
+            <li class="item-menu"><a href="mes.html">
+                    <span class="icon"><i class="bi bi-coin"></i></span>
+                    <span class="txt-link">Gastos do mês</span>
+                </a></li>
+            <li class="item-menu"><a href="objetivos.html">
+                    <span class="icon"><i class="bi bi-bar-chart"></i></span>
+                    <span class="txt-link">Objetivos</span>
+                </a></li>
+            <li class="item-menu"><a href="anual.html">
+                    <span class="icon"><i class="bi bi-calendar-check"></i></span>
+                    <span class="txt-link">Visão Anual</span>
+                </a></li>
+            <li class="item-menu"><a href="http://localhost/Projeto_Integrador/suporte.html">
+                    <span class="icon"><i class="bi bi-gear"></i></span>
+                    <span class="txt-link">Suporte</span>
+                </a></li>
+            <li class="item-menu"><a href="configuracoes.html">
+                    <span class="icon"><i class="bi bi-gear"></i></span>
+                    <span class="txt-link">Configurações</span>
+                </a></li>
+        </ul>
+    </nav>
+
+    <div class="home">
+        <!-- Seção para o valor recebido -->
+        <div class="section" id="entry-section">
+            <div class="header" id="div1">Saldo</div>
+            <div>
+                <input type="number" id="entry-amount" placeholder="Valor">
+                <button class="add-button" id="button1" onclick="addEntry()">Adicionar</button>
+            </div>
+            <form id="entry-output">
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="th1">Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody id="entry-output-body"></tbody>
+                </table>
+                <div id="div2">Total de Entradas: R$ <span id="total-entry-amount">0.00</span></div>
+            </form>
+            <!-- Seção para saldo disponível -->
+            <div class="balance" id="balance">Saldo Disponível: R$ 0.00</div>
+        </div>
+
+        <!-- Seção para despesas por categoria -->
+        <div id="div7">
+            <div class="section" id="category-expenses">
+                <div class="header" id="div6">GASTOS POR CATEGORIA</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Categoria</th>
+                            <th id="th9">Limite</th>
+                            <th id="th10">Valor</th>
+                            <th id="th11">Porcentagem</th>
+                            <th id="th12">Remover</th>
+                        </tr>
+                    </thead>
+                    <tbody id="category-expenses-body"></tbody>
+                </table>
+
+            </div>
+        </div>
+        <div id="div8">
+            <button class="add-button" onclick="addCategoryRow()" id="button4"><i class="bi bi-plus-lg"
+                    id="i1"></i></button>
+        </div>
+        <!-- Seção para despesas mensais -->
+        <div class="section" id="monthly-expenses">
+            <div class="header" id="div5">GASTOS FIXOS DO MÊS</div>
+            <table>
+                <thead>
+                    <tr id="tabelas">
+                        <th id="th2">Nome</th>
+                        <th id="th3">Data</th>
+                        <th id="th4">Categoria</th>
+                        <th id="th5">Valor</th>
+                        <th id="th6">Pago</th>
+                        <th id="th7">Tipo</th>
+                        <th id="th8">Remover</th>
+                    </tr>
+                </thead>
+                <tbody id="monthly-expenses-body"></tbody>
+            </table>
+            <div>
+                <button class="add-button" onclick="addFixedExpenseRow()" id="button3"><i class="bi bi-plus-lg"
+                        id="i1"></i></button>
+            </div>
+        </div>
+
+        <!-- Seção para saída de gastos -->
+        <div class="section" id="expense-output">
+            <div class="header" id="div3">SAÍDA</div>
+            <table id="table1">
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody id="expense-output-body"></tbody>
+            </table>
+            <div id="total-expense">
+                Total gasto: R$ <span id="total-expense-amount">0.00</span>
+            </div>
+        </div>
+
+        <!-- Seção para saldo disponível -->
+        <div class="balance" id="div4">Saldo Disponível: R$ 0.00</div>
+
+        <!-- Seção para avisos de limite -->
+        <div id="warnings-container" class="warning"></div>
+
+        <!-- Container para o gráfico de despesas -->
+        <div id="chart-container">
+            <canvas id="expenseChart"></canvas>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/indice.js"></script>
+<script src="js/configuracao.js"></script>
+<script src="js/home.js"></script>
+<script src="js/mes.js"></script>
+<script src="js/objetivos.js"></script>
+<script src="js/suporte.js"></script>
+<script src="js/perfil.js"></script>
+<script src="js/anual.js"></script>
+
+
+</body>
+
+</html>

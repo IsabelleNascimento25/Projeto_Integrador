@@ -1,0 +1,153 @@
+i#perfil {
+    font-size: 200px;
+    color: rgb(133, 133, 133);
+
+    position: relative;
+    left: 650px;
+    top: 100px;
+}
+
+.nome {
+    font-family: "Fredoka", sans-serif;
+    font-size: 50px;
+
+    position: relative;
+    left: 690px;
+    top: 90px;
+}
+
+.pessoa {
+    background-color: #06264F;
+    width: 30px;
+}
+
+/*quadro 1*/
+.quadro1 {
+    background-color: #06264F;
+    border-radius: 7px;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+
+    position: relative;
+    left: 490px;
+    top: 140px;
+    z-index: 2;
+}
+
+i#ft1 {
+    font-size: 30px;
+    color: #FFFFFF;
+
+    position: relative;
+    top: 5px;
+}
+
+.campo1 {
+    border-color: #06264F;
+    border-style: double;
+    border-radius: 5px;
+    width: 500px;
+    height: 35px;
+    font-size: 20px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 700;
+
+
+    position: relative;
+    left: 530px;
+    top: 103px;
+}
+
+/*quado 2*/
+.quadro2 {
+    background-color: #06264F;
+    border-radius: 7px;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+
+    position: relative;
+    left: 490px;
+    top: 120px;
+    z-index: 2;
+}
+
+i#ft2 {
+    font-size: 30px;
+    color: #FFFFFF;
+
+    position: relative;
+    top: 5px;
+}
+
+.campo2 {
+    border-color: #06264F;
+    border-style: double;
+    border-radius: 5px;
+    width: 500px;
+    height: 35px;
+    font-size: 20px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 700;
+
+
+    position: relative;
+    left: 530px;
+    top: 83px;
+}
+
+/*quado 3*/
+.quadro3 {
+    background-color: #06264F;
+    border-radius: 7px;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+
+    position: relative;
+    left: 490px;
+    top: 100px;
+    z-index: 2;
+}
+
+i#ft3 {
+    font-size: 30px;
+    color: #FFFFFF;
+
+    position: relative;
+    top: 5px;
+}
+
+.campo3 {
+    border-color: #06264F;
+    border-style: double;
+    border-radius: 5px;
+    width: 500px;
+    height: 35px;
+    font-size: 20px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 700;
+
+
+    position: relative;
+    left: 530px;
+    top: 60px;
+}
+
+/*botão de sair*/
+button {
+    color: white;
+    background-color: #D02222;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+
+    position: relative;
+    left: 180px;
+    top: 130px;
+}

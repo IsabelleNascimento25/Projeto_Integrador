@@ -36,7 +36,7 @@ document.getElementById("form-signup").addEventListener("submit", function(event
     }
 
     // Se todas as validações forem bem-sucedidas, redirecione para a próxima página
-    window.location.href = "perguntas2.html";
+    window.location.href = "aviso1.html";
 });
 
 function emailValido(email) {
