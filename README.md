@@ -1,66 +1,101 @@
-# Projeto_Integrador
+##🌟 Introdução ao Projeto ProsperCoin
 
-## links para adicionar o css
-   <link rel="stylesheet" type="text/css" href="css/indice.css">
-    <link rel="stylesheet" type="text/css" href="css/configuracao.css">
-    <link rel="stylesheet" type="text/css" href="css/home.css">
-    <link rel="stylesheet" type="text/css" href="css/mes.css">
-    <link rel="stylesheet" type="text/css" href="css/objetivos.css">
-    <link rel="stylesheet" type="text/css" href="css/suporte.css">
-    <link rel="stylesheet" type="text/css" href="css/perfil.css">
-    <link rel="stylesheet" type="text/css" href="css/anual.css">
-    ---
-    
-## links para adicionar o js
-<script src="js/indice.js"></script>
-<script src="js/configuracao.js"></script>
-<script src="js/home.js"></script>
-<script src="js/mes.js"></script>
-<script src="js/objetivos.js"></script>
-<script src="js/suporte.js"></script>
-<script src="js/perfil.js"></script>
-<script src="js/anual.js"></script>
+O ProsperCoin é o projeto final desenvolvido como parte do curso técnico integrado ao ensino médio profissionalizante no Colégio Marista Irmão Acácio, com uma carga horária total de 3.500 horas. Esse projeto representa a integração entre teoria e prática, resultando em uma solução inovadora.
 
----
+Utilizamos os processos do Design Thinking, uma metodologia colaborativa focada na resolução de problemas complexos. Essa abordagem guiou todas as etapas do projeto, desde a identificação dos desafios até a criação de uma solução funcional e impactante.
 
-## Menu
-        <!-- menu -->
-    <nav class="menu-lateral">
-      <div class="btn-expandir">
-          <h1>Índice</h1>
-      </div>
-      <div class="cor_azul"></div>
-      <ul>
-          <li class="item-menu"><a href="perfil.html">
-              <span class="icon"> <i class="bi bi-person"></i></span>
-              <span class="txt-link">Perfil</span>
-          </a></li>
-          <li class="item-menu" id="cor_button"><a href="home.html">
-              <span class="icon"><i class="bi bi-house-door"></i></span>
-              <span class="txt-link">Início</span>
-          </a></li>
-          <li class="item-menu"><a href="mes.html">
-              <span class="icon"><i class="bi bi-coin"></i></span>
-              <span class="txt-link">Gastos do mês</span>
-          </a></li>
-          <li class="item-menu"><a href="objetivos.html">
-              <span class="icon"><i class="bi bi-bar-chart"></i></span>
-              <span class="txt-link">Objetivos</span>
-          </a></li>
-          <li class="item-menu"><a href="anual.html">
-              <span class="icon"><i class="bi bi-calendar-check"></i></span>
-              <span class="txt-link">Visão Anual</span>
-          </a></li>
-          <li class="item-menu"><a href="http://localhost/Projeto_Integrador/suporte.html">
-              <span class="icon"><i class="bi bi-gear"></i></span>
-              <span class="txt-link">Suporte</span>
-          </a></li>
-          <li class="item-menu"><a href="configuracoes.html">
-              <span class="icon"><i class="bi bi-gear"></i></span>
-              <span class="txt-link">Configurações</span>
-          </a></li>
-      </ul>
-  </nav>
-  <!-- conteudo -->
+Ao alinhar o Design Sprint com os Objetivos de Desenvolvimento Sustentável (ODS), priorizamos três pilares essenciais:
 
-  ##
+Redução das Desigualdades (ODS 10)
+
+Educação de Qualidade (ODS 4)
+
+Crescimento Econômico Sustentável (ODS 8)
+
+Durante o processo, realizamos um levantamento detalhado sobre os desafios enfrentados por jovens em relação à educação financeira. Identificamos que a falta de acesso a conhecimentos financeiros é uma barreira significativa para o desenvolvimento econômico e social.
+
+
+
+## 📈 O Projeto: ProsperCoin
+
+O ProsperCoin é um gerenciador financeiro criado para ajudar jovens a organizarem suas finanças de forma simples e intuitiva. O objetivo é ir além do registro de receitas e despesas, proporcionando um ambiente de aprendizado sobre educação financeira e incentivando hábitos saudáveis de gestão financeira.
+
+## 📅 Principais Funcionalidades:
+
+Cadastro e login de usuários.
+
+Acompanhamento de movimentações financeiras.
+
+Exibição de saldo atual e histórico de transações.
+
+Classificação de receitas e despesas por categoria.
+
+Visão geral mensal e anual dos gastos.
+
+Painel de Metas e Wishlist.
+
+Central de Conhecimento Financeiro.
+
+## 💡 Tecnologias Utilizadas:
+
+Front-end: HTML, CSS, JavaScript, Node.js.
+
+Back-end: PHP.
+
+Banco de Dados: MySQL.
+
+##🔧 Conexões e Implementação do Método CRUD no Desenvolvimento do ProsperCoin
+
+A comunicação com o banco de dados foi estruturada para garantir segurança e eficiência na manipulação das informações. Para isso, utilizamos um banco de dados MySQL, conectado à aplicação via PHP.
+
+Implementamos o Método CRUD, essencial para as operações do sistema:
+
+Create (Criar) – Cadastro de usuários e transações financeiras.
+
+Read (Ler) – Recuperação de histórico de despesas e receitas.
+
+Update (Atualizar) – Modificação de registros, como perfil e metas.
+
+Delete (Excluir) – Remoção de transações e categorias personalizadas.
+
+## 🎨 Design e Identidade Visual do ProsperCoin
+
+A construção da identidade visual do ProsperCoin foi essencial para garantir uma experiência intuitiva, acessível e atrativa. Aplicamos conceitos de Design Thinking para criar um layout funcional e coerente com nosso público-alvo.
+
+## 🌈 Escolha das Cores Nossa paleta de cores foi baseada na psicologia das cores, transmitindo sensações específicas:
+
+🔵 Azul: Confiança e estabilidade financeira.
+
+🟢 Verde: Crescimento e prosperidade.
+
+🟡 Amarelo: Criatividade e aprendizado.
+
+🔧 Ferramentas Utilizadas Para o desenvolvimento visual, utilizamos diversas ferramentas, garantindo um design profissional e consistente:
+
+Figma – Protótipos interativos e wireframes.
+
+Adobe Illustrator & Photoshop – Criação de elementos visuais.
+
+Canva – Ajustes rápidos e materiais complementares.
+
+## 📖 Brand Book Além do design da interface, desenvolvemos um Brand Book, documentando a identidade visual e as diretrizes da marca. Esse material será disponibilizado para os próximos alunos do colégio, servindo como referência para aprimorar futuros projetos e manter a identidade visual do ProsperCoin.
+
+🎩 Metodologias Ágeis e Modelagem de Dados
+
+Adotamos Scrum e Kanban para garantir flexibilidade no desenvolvimento e entregas incrementais. Utilizamos a plataforma Jira para distribuição e acompanhamento de tarefas.
+
+Para a modelagem de dados, aplicamos diferentes diagramas UML e DER:
+
+Diagrama de Casos de Uso – Representando interações dos usuários com o sistema.
+
+Diagrama de Classes – Estruturando entidades como "Usuário", "Transação" e "Categoria".
+
+Diagrama Entidade-Relacionamento (DER) – Modelando a conexão entre usuários, receitas, despesas e metas financeiras.
+
+📚 Link do GitHub:
+
+Projeto Integrador - ProsperCoin
+
+Agradecemos ao Colégio Marista Social Irmão Acácio por proporcionar essa oportunidade de aprendizado e inovação. 👨‍🎓 Um agradecimento especial aos professores Cleu, Leonardo e Eduardo por nos guiarem nessa jornada, e também ao diretor Luiz e à coordenadora Marta pelo apoio inestimável!
+
+#ProsperCoin #EducaçãoFinanceira #TI #DesignThinking #Scrum #Kanban #UML #FrontEnd #BackEnd #Branding #Figma #ProjetoIntegrador
