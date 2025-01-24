@@ -92,10 +92,13 @@ Diagrama de Classes – Estruturando entidades como "Usuário", "Transação" e 
 
 Diagrama Entidade-Relacionamento (DER) – Modelando a conexão entre usuários, receitas, despesas e metas financeiras.
 
-📚 Link do GitHub:
+ 
+# 📚Contribuindo no GitHub
 
-Projeto Integrador - ProsperCoin
 
-Agradecemos ao Colégio Marista Social Irmão Acácio por proporcionar essa oportunidade de aprendizado e inovação. 👨‍🎓 Um agradecimento especial aos professores Cleu, Leonardo e Eduardo por nos guiarem nessa jornada, e também ao diretor Luiz e à coordenadora Marta pelo apoio inestimável!
+**Se você encontrou um problema, deseja sugerir melhorias ou simplesmente quer dar um feedback sobre o projeto, você pode contribuir fazendo um fork do repositório. Após fazer o fork, você pode:**
 
-#ProsperCoin #EducaçãoFinanceira #TI #DesignThinking #Scrum #Kanban #UML #FrontEnd #BackEnd #Branding #Figma #ProjetoIntegrador
+1. Fazer as modificações necessárias no seu repositório.
+2. Enviar um pull request para o repositório original.
+
+Agradeco sua contribuição!
