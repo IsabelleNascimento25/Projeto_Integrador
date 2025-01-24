@@ -1,4 +1,4 @@
-##🌟 Introdução ao Projeto ProsperCoin
+# Introdução ao Projeto ProsperCoin
 
 O ProsperCoin é o projeto final desenvolvido como parte do curso técnico integrado ao ensino médio profissionalizante no Colégio Marista Irmão Acácio, com uma carga horária total de 3.500 horas. Esse projeto representa a integração entre teoria e prática, resultando em uma solução inovadora.
 
